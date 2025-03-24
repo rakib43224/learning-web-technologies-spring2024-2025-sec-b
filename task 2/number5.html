@@ -1,0 +1,27 @@
+<html>
+<head>
+<title>Degrees</title>
+</head>
+<body>
+
+<label><input type="checkbox" id="ssc"> SSC</label>
+<label><input type="checkbox" id="hsc"> HSC</label>
+<label><input type="checkbox" id="bsc"> BSC</label><br>
+
+<button onclick="check()"> GO </button>
+<p id="result" class="err"></p>
+
+<script>
+function check() {
+  let s = document.getElementById("ssc").checked;
+  let h = document.getElementById("hsc").checked;
+  let b = document.getElementById("bsc").checked;
+  let r = document.getElementById("result");
+
+  if (!s && !h && !b) return r.textContent = "Select one!";
+
+ }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+HTML
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Email Validation</title>
+  
+</head>
+<body>
+
+  <h2>Email</h2>
+
+  <form id="emailForm">
+    <input type="text" id="email" name="email">
+    <br><br>
+    <input type="submit" value="Submit">
+    <p id="emailError" class="error"></p>
+  </form>
+
+  <script>
+    document.getElementById("emailForm").addEventListener("submit", function(event) {
+      event.preventDefault(); 
+
+      let emailInput = document.getElementById("email").value;
+      let errorSpan = document.getElementById("emailError");
+      errorSpan.textContent = ""; 
+
+     
+      if (emailInput.trim() === "") {
+        errorSpan.textContent = "Email cannot empty.";
+        return;
+      }
+
+     
+      alert("Email is valid: " + emailInput);
+      
+  
+  </script>
+
+</body>
+</html>
