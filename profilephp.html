@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Signup Form</title>
+ 
+</head>
+<body>
+  <div class="login-box">
+    <h2>Signup</h2>
+    <form action="signup.php" method="POST">
+      <div class="user-box">
+        <label>Username :</label> 
+        <input type="text" name="username" required />
+      </div> <br/>
+      
+      <div class="user-box">
+        <label>Email :</label> 
+        <input type="email" name="email" required />
+      </div> <br/>
+      
+      <div class="user-box">
+        <label>Password :</label>
+        <input type="password" name="password" required />
+      </div> <br/>
+
+      <div class="user-box">
+        <label>Confirm Password :</label>
+        <input type="password" name="confirm_password" required />
+      </div> <br/>
+
+      <button type="submit">Signup</button>
+    </form>
+  </div>
+</body>
+</html>
+
